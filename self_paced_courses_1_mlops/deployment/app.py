@@ -3,13 +3,13 @@ import pandas as pd
 from huggingface_hub import hf_hub_download
 import joblib
 
-#added comment on 21 May 2026
 # Download and load the model
 model_path = hf_hub_download(repo_id="jmgenai1/PIMA-Diabetes-Prediction", filename="best_pima_diabetes_model_v1.joblib")                                       # enter the Hugging Face username here
 model = joblib.load(model_path)
 
+#added comment on 21 May 2026
 # Streamlit UI for Machine Failure Prediction
-st.title("PIMA Diabetes Prediction App - Run for May 21st 2016")
+st.title("PIMA Diabetes Prediction App - Run for May 21st 2026")
 st.write("""
 This application predicts the likelihood of a patient having diabetes based on their health attributes.
 Please enter the sensor and configuration data below to get a prediction.
